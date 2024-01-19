@@ -1,0 +1,24 @@
+import csv
+
+def read_csv(file_path):
+    querySum = 0
+    JDBCSum = 0
+
+    count = 0
+
+    with open(file_path, 'r', newline='') as csvfile:
+        reader = csv.reader(csvfile, delimiter='|')
+        for row in reader:
+            qNum, jNum = map(int, map(str.strip, row))
+
+            querySum += qNum
+            JDBCSum += jNum
+
+            count+= 1
+
+    return querySum/count, JDBCSum/count
+
+csv_file_path = 'queryTime.csv'
+TS, TJ = read_csv(csv_file_path)
+print(TS)
+print(TJ)

@@ -1,0 +1,42 @@
+/* Style for the letter buttons */
+.letter-table {
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+.letter-table td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+}
+
+.letter-button {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #0074d9;
+    color: #fff;
+    border: 1px solid #0056b3;
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.letter-button:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+/* Additional styling for the form and select dropdowns */
+form {
+    margin: 20px auto;
+    text-align: center;
+}
+
+select {
+    width: 150px;
+    padding: 5px;
+    margin-right: 10px;
+}

@@ -1,0 +1,47 @@
+<style>
+    /* Add your styles for autocomplete suggestions and selected suggestion here */
+    .autocomplete-suggestion {
+        padding: 8px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        background-color: #fff;
+    }
+
+    .autocomplete-suggestion.selected {
+        background-color: #ccc;
+    }
+</style>
+
+<div>
+<div class="autocomplete">
+    <input type="text" name = "searchTitle" id="search-bar" placeholder="Search">
+    <button id="search-button">Search</button>
+    <div id="autocomplete-results" class="autocomplete-results">
+    </div>
+</div>
+<div id="collapseForm">
+    <form id="advance_search_form" method="post" autocomplete="off" action="#">
+        <!-- If decide to add border bottom addd : border-bottom-color: #e74c3c !important to style and border-bottom to class -->
+        <label>
+            <input class="search_input" style="width: inherit" type="text" name="title" placeholder="Title">
+        </label>
+        <label>
+            <input class="search_input" style="width: inherit"  type="number" name="year" placeholder="Year">
+        </label>
+        <label>
+            <input class="search_input" style="width: inherit"  type="text" name="director" placeholder="Director">
+        </label>
+        <label>
+            <input class="search_input" style="width: inherit"  type="text" name="star" placeholder="Star">
+        </label>
+        <input type="submit" value="Advanced Search">
+    </form>
+</div>
+    <script src="js/advancedSearch.js"></script>
+    <script src="js/searchBar.js"></script>
+</div>
+
+
+
+
+

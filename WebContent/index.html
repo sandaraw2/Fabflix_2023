@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Leckerli+One|Gabarito">
+    <link rel="stylesheet" type="text/css" href="css/general.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slay.css"/>
+    <title>Main Page</title>
+</head>
+
+<body>
+    <div id="nav-placeholder"></div>
+    <div id= "searchBar"> </div>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            jQuery.get("assets/nav-bar.html", function (data) {
+                jQuery("#nav-placeholder").replaceWith(data);
+            });
+
+            jQuery.get("assets/search.html", function (data) {
+                jQuery("#searchBar").replaceWith(data);
+            });
+        });
+    </script>
+    <div id="browse_containers" class="flex-container">
+        <div id="genre_buttons_container" class="btn-group"></div>
+        <div id=letter_buttons class="btn-group"> </div>
+    </div>
+    <!-- include your own JS file -->
+    <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='js/index.js'></script>
+    <script type='text/javascript' src = "js/browse.js"></script>
+
+
+</body>
+</html>

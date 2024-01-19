@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/general.css"/>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Leckerli+One|Gabarito">
+    <title>Employee Login</title>
+    <script src='https://www.google.com/recaptcha/api.js' type="text/javascript"></script>
+</head>
+
+<body>
+<section>
+    <div class="row justify-content-center">
+        <div class="col-12 text-center">
+            <h2>Login</h2>
+        </div>
+        <div class="col-12 text-center">
+            <form id="dashboard_login_form" method="post" action="#">
+                <label><b>Employee Email </b></label>
+                <label>
+                    <input name="email" placeholder="Enter Email" type="text">
+                </label>
+                <br>
+                <label><b>Password </b></label>
+                <label>
+                    <input name="password" placeholder="Enter Password" type="password">
+                </label>
+                <br>
+                <input type="submit" value="Login">
+                <div class="g-recaptcha" data-sitekey="6Ldz_gwpAAAAAJv0AzQB011101Y0ii6WcUpbccOD"></div>
+            </form>
+        </div>
+        <div id="login_error_message" class="col-12 text-center"></div>
+    </div>
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+    <div class="wave wave4"></div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="../js/_dashboard/dashboard-login.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+body {
+    background: linear-gradient(to bottom right, #faf7f8,#facfe1);
+    font-family: 'Gabarito',sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.custom-bg {
+    background: linear-gradient(to right, #9c104a, #ed1a72);
+}
+
+
+.navbar {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Customize the shadow properties */
+}
+
+.nav-link:hover {
+    background-color: #850f4c; /* Change to your desired hover color */
+}
+
+.navbar .navbar-brand {
+    color: white;
+    font-family: 'Leckerli One', sans-serif;
+    font-size: 24px;
+}
+
+.custom-body{
+    margin: 20px;
+    padding: 20px;
+}
+
+.votes-subtitle{
+    font-size: 70%;
+}
+
+
+

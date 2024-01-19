@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a star</title>
+</head>
+<body>
+<a href="dashboard-index.html">Dashboard</a>
+<h2>Add Star</h2>
+
+<div id="responseMessage"></div>
+<form id="addStarForm">
+    <label for="star_name">Star Name:</label>
+    <input type="text" id="star_name" name="star_name" required><br>
+
+    <label for="star_birth_year">Star Birth Year:</label>
+    <input type="text" id="star_birth_year" name="star_birth_year"><br>
+
+    <button type="button" onclick="addStar()">Add Star</button>
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src='../js/_dashboard/add-star.js'> </script>
+</body>
+</html>

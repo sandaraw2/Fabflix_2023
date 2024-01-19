@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MetaData</title>
+
+</head>
+<body>
+<div id="nav-placeholder"></div>
+<div id="metadata"></div>
+
+<script src="../js/_dashboard/dashboard-index.js"></script>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        jQuery.get("dashboard-nav-bar.html", function (data) {
+            jQuery("#nav-placeholder").replaceWith(data);
+        });
+    });
+</script>
+
+</body>
+</html>
